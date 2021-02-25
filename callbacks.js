@@ -1,1 +1,2 @@
 setTimeout()
+console.log('callbacks');

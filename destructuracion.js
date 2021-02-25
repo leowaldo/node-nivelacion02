@@ -26,3 +26,4 @@ console.log(p1,p2,p3);
  Destructurado queda asi*/
 const[p3,p2,p1]=personajes;
 console.log(p1,p2,p3);
+console.log('destructuracion');

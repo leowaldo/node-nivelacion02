@@ -22,3 +22,4 @@ const saludar1=(nom)=>{
 console.log(saludar('leo'));
 const saludar2=(nome2)=> `Hola ${nome2} `;
 console.log(saludar2('orochimaru'));
+console.log('flechas');

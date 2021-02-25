@@ -13,3 +13,4 @@ const nombre ='leo';
   }
 
 console.log(nombre);
+console.log('diferencias entre let-const');
