@@ -10,6 +10,7 @@ console.log(suma1(20,10));/* llamado a la funcion flecha */
 
 const suma2=(c,d)=> c+d;/*como es una funcion flecha q se puede resolver en una misma linea se puede hacer asi */
 console.log(suma2(50,50));
+console.log('Arrow Function');
 
 function saludar(nombre){/*funcion saludar*/
   return `Hola ${nombre}`
@@ -22,4 +23,5 @@ const saludar1=(nom)=>{
 console.log(saludar('leo'));
 const saludar2=(nome2)=> `Hola ${nome2} `;
 console.log(saludar2('orochimaru'));
-console.log('flechas');
+const saludar3=nome3=>`otro saludo${nome3}`;/* funcion flecha mas directo en una linea  */
+console.log(saludar3('Sasuke!'));
