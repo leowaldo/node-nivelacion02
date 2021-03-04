@@ -23,5 +23,7 @@ const saludar1=(nom)=>{
 console.log(saludar('leo'));
 const saludar2=(nome2)=> `Hola ${nome2} `;
 console.log(saludar2('orochimaru'));
-const saludar3=nome3=>`otro saludo${nome3}`;/* funcion flecha mas directo en una linea  */
+const saludar3 = nome3 => `otro saludo${nome3}`;/* funcion flecha mas directo en una linea  */
 console.log(saludar3('Sasuke!'));
+const saludar4=()=>'Hola Mundo!';/*sin parametros solo se colocan los parentesis */
+console.log(saludar4());
