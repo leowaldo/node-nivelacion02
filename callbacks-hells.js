@@ -22,13 +22,21 @@ const sueldos=[
     sueldo:2000
   },
 ]
-const getEmpleadoById=(id,callback)=>{
+const getEmpleadoById=(id,callback)=>{/* */
   const empleado=empleados.find((e)=>e.id===id);/*la funcion find en Js sirve para encontrar algo en el array */
   if (empleado){
-    callback(empleado);
+    callback(null, empleado);
+    return;
   }
+  callback(new Error("El empleado no existe"));
 }
 const id=1;
-getUsuarioByid(id,({nombre})=>{
-  console.log(`El emleado:${nombre}.....`);
+getEmpleadoById(id,(error,empleado)=>{
+
+  if(error){
+    console.log('ERROR!!!');
+    console.log(error);
+    return;
+  }
+  console.log(`El emleado: ${empleado.nombre}.....`);
 });
